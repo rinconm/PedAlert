@@ -34,9 +34,9 @@ while(TRUE){
   If slowing down or at a halt
     continue
   Else
-    Function call - Alert protocol
+    7. Function call - Alert protocol
     
-  7. Function Call - Measure velocity of slowing or halted car
+  8. Function Call - Measure velocity of slowing or halted cars
   If vehicle speeds up
     Return to Function Call - Detect for pedestrians across walkpath
   Else
