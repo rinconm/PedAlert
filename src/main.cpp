@@ -6,8 +6,8 @@ Initialize
 1. Function Call - Establish network connection
 
 while(TRUE){
-  2. Function Call - Detect Light
-  If light
+  2. Function Call - Light detection
+  If day
     restart while loop
   Else
     continue
@@ -28,7 +28,7 @@ while(TRUE){
   If vehicles
     continue
   Else
-    Return to Function Call - Detect for pedestrians across walkpath
+    Return to 4. Function Call - Detect for pedestrians across walkpath
     
   6. Function Call - Measure velocity of oncoming car
   If slowing down or at a halt
@@ -38,11 +38,23 @@ while(TRUE){
     
   8. Function Call - Measure velocity of slowing or halted cars
   If vehicle speeds up
-    Return to Function Call - Detect for pedestrians across walkpath
+    Return to 4. Function Call - Detect for pedestrians across walkpath
   Else
     Return to 7. Function Call - Measure velocity of slowing or halted car
 
 }
+
+
+
+// Functions
+1. Establish network connection
+2. Light detection
+3. Detect for pedestrians in waiting area
+4. Detect for pedestrians across walkpath
+5. Detect for oncoming vehicles
+6. Measure velocity of oncoming cars
+7. Alert protocol
+8. Measure velocity of slowing or halted cars
 
 */
 
