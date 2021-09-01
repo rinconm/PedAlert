@@ -1,9 +1,28 @@
-/**
+/*
  * @file main.cpp
- * @brief Contains the Global Entry Point
+ * @brief The Global Entry Point
  * @author Marcos Rincon
  * @bug None
  */
+
+#include "PedAlert.hpp"
+#include <stdbool.h>
+
+using namespace std;
+using namespace pedalert;
+
+int main() {
+  
+  while(true) {
+    
+  }
+    
+  return 0; 
+}
+
+void network() {
+  
+}
 
 /*
 Pseudocode
