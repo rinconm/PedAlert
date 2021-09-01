@@ -1,3 +1,10 @@
+/**
+ * @file main.cpp
+ * @brief Contains the Global Entry Point
+ * @author Marcos Rincon
+ * @bug None
+ */
+
 /*
 Pseudocode
 
