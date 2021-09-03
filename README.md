@@ -12,3 +12,9 @@ Designed by: Zot Patrol, a multidisciplinary team of 6 student engineers.
 Advised by: Dr. Christine King
 
 ## Contributions/Dependencies
+Thanks to the contributions from these GitHub libraries:
+
+RF24 Network Functionality Provided by:
+https://github.com/nRF24/RF24
+
+
