@@ -27,6 +27,8 @@
  * @page Contributions
  * @details Thanks to the following GitHub Users for creating code that is used in this Project.
  * 
+ * nRF24L01 & RF24 Library: razerraz
+ * 
  * Guidance: orionserup
  * 
  * For OpenCV: The OpenCV team (opencv).
