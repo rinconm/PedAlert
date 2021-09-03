@@ -138,9 +138,8 @@ void network() {
 }
 
 void lightdetect() {
-  void loop() {
-    int value = analogRead(A0);
-    delay(250);
+  int value = analogRead(A2);
+  
   }
 }
 
@@ -161,12 +160,10 @@ void velocityapproach() {
 }
 
 void alert() {
-
+  
+  
 }
             
 void velocityexit(){
   
 }
-
-*/
-
