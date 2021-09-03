@@ -145,6 +145,8 @@ void lightdetect() {
 
 void waitdetect() {
   
+  Serial.print(Serial.readString().toInt());
+  
 }
 
 void walkdetect() {
