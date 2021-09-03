@@ -1,17 +1,17 @@
 /*
- * @file PedAlert.hpp
- * @brief Holds the PedAlert class with all sensors and such
+ * @file ZotWalk.hpp
+ * @brief Holds the ZotWalk class with all sensors and such
  * @author Marcos Rincon
  * @bug None
  */
 
 /* 
- * @mainpage UCI PedAlert 2021
+ * @mainpage UCI ZotWalk 2021
  * @author Marcos Rincon
  * 
- * This Project is the The PedAlert project for the EngiTank showcase. 
+ * This is the ZotWalk project designed for the EngiTank competition. 
  *
- * The Goal of this project is to create a night-time system designed to reduce pedestrian
+ * The goal of this project is to create a night-time system designed to reduce pedestrian
  * casualties due to inattentive drivers. The system uses doppler radar sensors to detect
  * oncoming vehicles and pedestrians at a crosswalk. When pedestrians are crossing, radar
  * sensors will measure the velocity of oncoming cars, and will execute an alert protocol
@@ -40,19 +40,19 @@
 /*
 * @brief namespace for this project
 */
-namespace pedalert{
+namespace zotwalk{
 
 /*
 * @brief The Complete System Class
 */
-class PedAlert{
+class ZotWalk{
 
 public:
 
   /**
   * @brief Constructs a system object
   */
-  PedAlert();
+  ZotWalk();
   
   /**
   * @brief Starts all Sensors and Probes them all
