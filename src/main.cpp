@@ -1,11 +1,12 @@
 /*
- * @file main.cpp
- * @brief 
+ * @file   main.cpp
+ * @brief  Main Program for Zotwalk Project
+ * @note   Check flowchart in docs folder for guidance
  * @author Marcos Rincon
- * @bug None
+ * @bug    None
  */
 
-#include "PedAlert.hpp"
+#include "ZotWalk.hpp"
 #include <stdbool.h>
 
 using namespace std;
@@ -14,6 +15,12 @@ using namespace pedalert;
 int light, nightflag, vel;
 bool ped, pedwalk, veh;
 
+/**
+ * @brief Main function for operation
+ * @param argc Number of Arguments from CLI
+ * @param argv Strings from the CLI
+ * @returns int exit code
+*/
 int main() {
   // Establish network connection function
   network();
@@ -47,7 +54,6 @@ int main() {
         if (veh == 0) {
           continue
         }
-        // stoped here
         // Measure velocity of oncoming vehicles function
         vel = velocity()
         if (vel <= 
