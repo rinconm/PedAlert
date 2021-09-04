@@ -30,47 +30,28 @@
  * nRF24L01 & RF24 Library: razerraz
  * 
  * Guidance: orionserup
- * 
- * For OpenCV: The OpenCV team (opencv).
  */
 
 #pragma once
 
-#include "ObjectDetection.hpp"
+#include <SPI.h>
+#include <nRF24L01.h>
+#include <RF24.h>
+#include <vector>
 
-
-/*
-* @brief namespace for this project
-*/
+// namespace for this project
 namespace zotwalk{
 
-/*
-* @brief The Complete System Class
-*/
+// The complete system class
 class ZotWalk{
 
 public:
-
-  /**
-  * @brief Constructs a system object
-  */
+  
+  // Constructs a system object
   ZotWalk();
   
-  /**
-  * @brief Starts all Sensors and Probes them all
-  */
-  void Setup();
-
-  /**
-  * @brief Starts running autonomously
-  */
-  void Run();
-
-
-private:
-
-
-};
+  // Starts all Sensors and Probes them all
+  setup();
 
 
 
