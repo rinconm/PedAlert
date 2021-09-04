@@ -67,20 +67,33 @@ bool waitdetect() {
     v(i) = radarscan();
     delay(1)
     }
-  if (max(v) > MIN_WALK_SPEED && < MIN_CAR_SPEED)
-  
-  
+  if (abs(max(v)) > MIN_WALK_SPEED && < MIN_CAR_SPEED)
+    if (abs(min(v)) > MIN_WALK_SPEED && < MIN_CAR_SPEED)
+      return 1
+  return 0
   }
 
 bool walkdetect() {
+  for (i = startscan; num <= endscan; i++) {
+  v(i) = radarscan();
+  delay(1)
+  }
   
 }
 
 bool vehdetect() {
+    for (i = startscan; num <= endscan; i++) {
+    v(i) = radarscan();
+    delay(1)
+    }
   
 }
 
 bool velocityapproach() {
+    for (i = startscan; num <= endscan; i++) {
+    v(i) = radarscan();
+    delay(1)
+    }
   
 }
 
@@ -94,6 +107,10 @@ void alert() {
 }
             
 bool velocityexit(){
+    for (i = startscan; num <= endscan; i++) {
+    v(i) = radarscan();
+    delay(1)
+    }
   
 }
 
