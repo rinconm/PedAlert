@@ -26,6 +26,7 @@
 #define END_SCAN = 1000;
 // Minimum Walking Speed of Pedestrian Value
 #define MIN_WALK_SPEED 2
+// Minimum Waiting Speed of Pedestrian Value
+#define MIN_WAIT_SPEED 0.25
 // Minimum Car Speed Value
 #define MIN_CAR_SPEED 15
-
