@@ -6,13 +6,21 @@
  * @bug    None
  */
 
+// Header Files
 #include "ZotWalk.hpp"
 #include <stdbool.h>
 
+// Namespace Specifications
 using namespace std;
 using namespace zotwalk;
 
-bool night, ped, pedwalk, veh, vehslow, vehspeed;
+// Boolean Decision Variables
+bool night, 
+     ped, 
+     pedwalk, 
+     veh, 
+     vehslow, 
+     vehspeed;
 
 /**
  * @brief Main function for operation
@@ -78,94 +86,4 @@ int main() {
   }
     
   return 0; 
-}
-
-void network() {
-  // Transmitter code:
-  /*
-  * Arduino Wireless Communication Tutorial
-  *     Example 1 - Transmitter Code
-  *                
-  * by Dejan Nedelkovski, www.HowToMechatronics.com
-  * 
-  * Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
-  */
-  #include <SPI.h>
-  #include <nRF24L01.h>
-  #include <RF24.h>
-  RF24 radio(7, 8); // CE, CSN
-  const byte address[6] = "00001";
-  void setup() {
-    radio.begin();
-    radio.openWritingPipe(address);
-    radio.setPALevel(RF24_PA_MIN);
-    radio.stopListening();
-  }
-  void loop() {
-    const char text[] = "Hello World";
-    radio.write(&text, sizeof(text));
-    delay(1000);
-  }
-
-  // Receiver code:
-  /*
-  * Arduino Wireless Communication Tutorial
-  *       Example 1 - Receiver Code
-  *                
-  * by Dejan Nedelkovski, www.HowToMechatronics.com
-  * 
-  * Library: TMRh20/RF24, https://github.com/tmrh20/RF24/
-  */
-  #include <SPI.h>
-  #include <nRF24L01.h>
-  #include <RF24.h>
-  RF24 radio(7, 8); // CE, CSN
-  const byte address[6] = "00001";
-  void setup() {
-    Serial.begin(9600);
-    radio.begin();
-    radio.openReadingPipe(0, address);
-    radio.setPALevel(RF24_PA_MIN);
-    radio.startListening();
-  }
-  void loop() {
-    if (radio.available()) {
-      char text[32] = "";
-      radio.read(&text, sizeof(text));
-      Serial.println(text);
-    }
-  }  
-}
-
-void lightdetect() {
-  int value = analogRead(A2);
-  
-  }
-}
-
-void waitdetect() {
-  
-  Serial.print(Serial.readString().toInt());
-  
-}
-
-void walkdetect() {
-  
-}
-
-void vehdetect() {
-  
-}
-
-void velocityapproach() {
-  
-}
-
-void alert() {
-  
-  
-}
-            
-void velocityexit(){
-  
 }
