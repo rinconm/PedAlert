@@ -1,3 +1,9 @@
+/**
+ * @file secondary.hpp
+ * @brief Contains all secondary functions
+ * @author Marcos Rincon
+ * @bug None
+ */
 void Setup(); {
   // initialize digital pin as an output.
   pinMode(RELAY_PIN, OUTPUT);
