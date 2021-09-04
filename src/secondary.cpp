@@ -4,7 +4,8 @@
  * @author Marcos Rincon
  * @bug None
  */
-void Setup(); {
+
+void Setup() {
   // initialize digital pin as an output.
   pinMode(RELAY_PIN, OUTPUT);
   // Set baud rate to 9600
